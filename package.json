@@ -1,6 +1,7 @@
 {
   "name": "01tut",
   "version": "0.1.0",
+  "homepage": "https://rashidshethwala.github.io/react_deploy_gh",
   "private": true,
   "dependencies": {
     "@testing-library/dom": "^10.4.0",
@@ -14,6 +15,8 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "CI=false react-scripts build",
     "test": "react-scripts test",
@@ -38,6 +41,7 @@
     ]
   },
   "devDependencies": {
-    "eslint": "^8.57.1"
+    "eslint": "^8.57.1",
+    "gh-pages": "^6.3.0"
   }
 }
